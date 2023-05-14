@@ -11,14 +11,11 @@
             padding-top: 6em;
         }
         .container{
-            /*Semitransparent black background with rounded corners*/
             background: rgba(0,0,0,0.5);
             border-radius: 10px;
             padding: 20px;
-            /*Margin in order to center this element*/
             width: 500px;
             height: 500px;
-            /*Center vertically all children elements within this element*/
             display: flex;
             align-items: center;
             justify-content: center;
@@ -34,11 +31,9 @@
             color: white;
             width: 200px;
             box-shadow: 2px 2px 5px black;
-            /*Display child elements in one line*/
             display: flex;
             align-items: center;
             justify-content: center;
-            /*Separation of 5px for each element*/
             gap: 5px;
         }
         .bg-red > p{
@@ -69,17 +64,79 @@
         }
         .text-red {
             color: #f0395b;
+            text-shadow: 2px 2px 5px #f0395b;
         }
         hr.neon-hr {
             border: 2px solid white;
             border-radius: 5px;
             width: 400px;
-            /*Center this element*/
             margin: auto;
-            /*Separation of 5px for each element*/
             margin-top: 5px;
             margin-bottom: 10px;
         }   
+        .center{
+           margin-top: 10em;
+        }
+       
+        .hero{
+            margin-top:5em;
+        }
+        .hero > p{
+            font-size: 1.3em;
+        }
+        .hero > h1 {
+            font-size: 5em;
+            padding-bottom: 0.5em;
+        }
+        .center > p{
+            text-align: justify;
+            font-size: 1.3em;
+        }
+        .text-green {
+            color: #C0C741;
+            text-shadow: 2px 2px 5px #C0C741;
+        }
+        .text-blue {
+            color: #0386F6;
+            text-shadow: 2px 2px 5px #0386F6;
+        }
+        .to-right{
+            margin-right: 7em;
+        }
+        .text-white {
+            color: aliceblue;
+            text-shadow: 2px 2px 5px aliceblue;
+        }
+        .padding-5{
+            padding-left: 3em;
+            padding-right: 3em;
+            padding-bottom: 10em;
+        }
+        .row{
+            border-top: 1px solid red;
+        }
+        .text-brown {
+            color: #593E21;
+            text-shadow: 2px 2px 5px #593E21;
+        }
+        @media screen and (min-width: 1000px) {
+            .ranita {
+                margin-left: 7em;
+                margin-top: 1em;
+            }
+        }
+
+        .donkey {
+            width: 400px;
+        }
+
+        @media screen and (max-width: 1000px) {
+            .tempest {
+                width: 400px;
+                margin-top: 6em;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -93,13 +150,48 @@
             </div>
             <h1 class="secondary-title">Rage</h1>
             <h1 class="title text-red">Arcade</h1>
-            <!--Two hr elements with neon-like shadow-->
             <hr class="neon-hr" />
             <hr class="neon-hr" />
             <hr class="neon-hr" />
         </div>
-        
     </div>
+    <div class="container-fluid">
+        <div class="row bg-dark padding-5">
+            <div class="col-md-12 hero text-center">
+                <h1 class="text-brown">Rage</h1>
+                <p class="text-white">
+                    Paraguay. 1986. Un grupo de amigos adolescentes deciden ir a divertirse en el cementerio mientras esperan a Manuel, uno de sus amigos, quien trabaja en una morgue. Emborrachados, encuentran un libro maldito de conjuros en una tumba abandonada. Uno de ellos lo lee en voz alta, desatando un antiguo mal: Teju Jaguá, la bestia de siete cabezas, ahora está libre y busca venganza. Los amigos son brutalmente asesinados y Manuel, quien ha estado trabajando en la morgue todo este tiempo, es el único sobreviviente. Para escapar, tendrá que luchar contra Teju Jaguá y sus criaturas malditas mientras navega a través de un oscuro y peligroso cementerio.
+                </p>
+            </div>
+            <div class="col-md-12">
+                <center>
+                    <img src="assets/rage.gif" width="500" />
+                </center>
+            </div>
+            <div class="col-md-6 desktop">
+                <img src="assets/dk.png" width="500" class="donkey" />
+            </div>
+            <div class="col-md-6 center">
+                <h1 class="text-red pb-4">Donkey Kong</h1>
+                <p class="text-white">Donkey Kong es un juego de arcade creado por Nintendo en 1981. Es un juego de plataformas donde el jugador debe controlar a Mario a través de una serie de niveles en los que debe evitar obstáculos y enemigos para rescatar a Pauline, su novia, de las garras de Donkey Kong.</p>
+            </div>
+            <div class="col-md-6 center pt-5">
+                <h1 class="text-green pb-4">Explon't</h1>
+                <p class="text-white">Eres ranaa. No hagasss a ranaa enfadarr. Rana exxplotar! Paletas gustar a rana.</p>
+            </div>
+            <div class="col-md-6 pt-5">
+                <img src="assets/ranita.png" width="400" class="ranita" />
+            </div>
+            <div class="col-md-6 pt-5">
+                <img src="assets/tempest.png" class="tempest" />
+            </div>
+            <div class="col-md-6 center pt-5">
+                <h1 class="text-white pb-4">Tempest Run</h1>
+                <p class="text-white">
+                    Un cruce entre Tempest (1981) y Temple Run (2011), "Tempest Run" le da un nuevo giro a esos juegos icónicos y se hizo para el Pygame Community Summer Jam 2021, cuyo tema fue "Recrear un juego antiguo con un giro". Salta sobre picos, deslízate a través de enemigos y evita las paredes en este interminable corredor 3D. Mira hasta dónde puedes llegar en el interminable agujero de gusano.
+                </p>
+            </div>
+        </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
