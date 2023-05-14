@@ -7,35 +7,57 @@
         .background {
             background-image: url('assets/sun_retrowave.jpg');
             height: 100vh;
+            background-size: cover;
+            padding-top: 6em;
         }
         .container{
-            padding-top:5em;
+            /*Semitransparent black background with rounded corners*/
+            background: rgba(0,0,0,0.5);
+            border-radius: 10px;
+            padding: 20px;
+            /*Margin in order to center this element*/
+            width: 500px;
+            height: 500px;
+            /*Center vertically all children elements within this element*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            border:1px solid red;
         }
         .bg-red {
-            background: #be2854;
+            background: rgb(192,38,86);
             padding: 14px;
             margin: 20px;
             border-radius: 5px;
             text-transform: uppercase;
-            color:white;
-            width: 170px;
-            box-shadow:2px 2px 5px black;
-            align-items:center;
-            align-self:center;
+            color: white;
+            width: 200px;
+            box-shadow: 2px 2px 5px black;
+            /*Display child elements in one line*/
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*Separation of 5px for each element*/
+            gap: 5px;
         }
         .bg-red > p{
             line-height: 0.7;
             text-shadow: 2px 2px black;
         }
         .secondary-title {
-            text-align: center;
-            font-size: 5em;
-            text-shadow: 2px 2px;
+            margin-top: 0.2em;
+            font-size: 7em;
+            font-weight: 500;
+            text-transform: uppercase;
+            text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
         }
         .title {
-            text-align: center;
-            font-size: 10em;
-            text-shadow: 2px 2px;
+            margin-top: 0.3em;
+            margin-bottom: 0.3em;
+            font-size: 7em;
+            text-shadow: 2px 2px 5px red;
+            text-transform: uppercase;
         }
         h1{
             line-height:0.6;
@@ -48,20 +70,35 @@
         .text-red {
             color: #f0395b;
         }
+        hr.neon-hr {
+            border: 2px solid white;
+            border-radius: 5px;
+            width: 400px;
+            /*Center this element*/
+            margin: auto;
+            /*Separation of 5px for each element*/
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }   
     </style>
 </head>
 <body>
     <div class="background">
         <div class="container">
             <div class="intro-section">
-                <div class="bg-red">
+                <div class="bg-red"
                     <p>Press X to Start</p>
                     <i class="bi bi-dpad-fill text-dark"></i>
                 </div>
             </div>
-            <h1 class="secondary-title text-red">Rage</h1>
+            <h1 class="secondary-title">Rage</h1>
             <h1 class="title text-red">Arcade</h1>
+            <!--Two hr elements with neon-like shadow-->
+            <hr class="neon-hr" />
+            <hr class="neon-hr" />
+            <hr class="neon-hr" />
         </div>
+        
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
