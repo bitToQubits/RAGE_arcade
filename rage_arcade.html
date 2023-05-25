@@ -5,14 +5,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <style>
         .background {
-            background-image: url('assets/sun_retrowave.jpg');
+            background-image: url('assets/ciudadfondo.gif');
             height: 100vh;
             background-size: cover;
             padding-top: 6em;
         }
-        .container{
-            background: rgba(0,0,0,0.5);
-            border-radius: 10px;
+
+        .contenedor {
+            background: rgba(0,0,0,0.75);
             padding: 20px;
             width: 500px;
             height: 500px;
@@ -20,8 +20,9 @@
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            border:1px solid red;
+            border: 1px solid red;
         }
+
         .bg-red {
             background: rgb(192,38,86);
             padding: 14px;
@@ -36,10 +37,12 @@
             justify-content: center;
             gap: 5px;
         }
-        .bg-red > p{
-            line-height: 0.7;
-            text-shadow: 2px 2px black;
-        }
+
+            .bg-red > p {
+                line-height: 0.7;
+                text-shadow: 2px 2px black;
+            }
+
         .secondary-title {
             margin-top: 0.2em;
             font-size: 7em;
@@ -47,6 +50,7 @@
             text-transform: uppercase;
             text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff, 1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
         }
+
         .title {
             margin-top: 0.3em;
             margin-bottom: 0.3em;
@@ -54,18 +58,22 @@
             text-shadow: 2px 2px 5px red;
             text-transform: uppercase;
         }
-        h1{
-            line-height:0.6;
+
+        h1 {
+            line-height: 0.6;
         }
+
         .intro-section {
             display: flex;
             align-items: center;
             justify-content: center;
         }
+
         .text-red {
             color: #f0395b;
             text-shadow: 2px 2px 5px #f0395b;
         }
+
         hr.neon-hr {
             border: 2px solid white;
             border-radius: 5px;
@@ -73,52 +81,64 @@
             margin: auto;
             margin-top: 5px;
             margin-bottom: 10px;
-        }   
-        .center{
-           margin-top: 10em;
         }
-       
-        .hero{
-            margin-top:5em;
+
+        .center {
+            margin-top: 10em;
         }
-        .hero > p{
-            font-size: 1.3em;
+
+        .hero {
+            margin-top: 5em;
         }
-        .hero > h1 {
-            font-size: 5em;
-            padding-bottom: 0.5em;
-        }
-        .center > p{
+
+            .hero > p {
+                font-size: 1.3em;
+            }
+
+            .hero > h1 {
+                font-size: 5em;
+                padding-bottom: 0.5em;
+            }
+
+        .center > p {
             text-align: justify;
             font-size: 1.3em;
         }
+
         .text-green {
             color: #C0C741;
             text-shadow: 2px 2px 5px #C0C741;
         }
+
         .text-blue {
             color: #0386F6;
             text-shadow: 2px 2px 5px #0386F6;
         }
-        .to-right{
+
+        .to-right {
             margin-right: 7em;
         }
+
         .text-white {
             color: aliceblue;
             text-shadow: 2px 2px 5px aliceblue;
         }
-        .padding-5{
+
+        .padding-5 {
             padding-left: 3em;
             padding-right: 3em;
             padding-bottom: 10em;
         }
-        .row{
+
+        .row {
             border-top: 1px solid red;
         }
+
         .text-brown {
             color: #593E21;
             text-shadow: 2px 2px 5px #593E21;
         }
+
         @media screen and (min-width: 1000px) {
             .ranita {
                 margin-left: 7em;
@@ -147,19 +167,28 @@
         }
 
         .card {
-            border: 2px solid #0d6efd;
+            border: 1px solid #0d6efd;
+        }
+
+        @media screen and (min-width: 768px) {
+            .creacion:hover {
+                filter: opacity(0.9);
+                transform: scale(1.050) !important;
+                transition: 0.5s;
+            }
         }
     </style>
 </head>
 <body>
     <div class="background">
-        <div class="container">
-            <div class="intro-section">
-                <div class="bg-red"
-                    <p>Press X to Start</p>
-                    <i class="bi bi-dpad-fill text-dark"></i>
-                </div>
-            </div>
+        <div class="container contenedor">
+            <!--div class="intro-section">
+        <div class="bg-red"
+            <p>Press X to Start</p>
+            <i class="bi bi-dpad-fill text-dark"></i>
+        </div>
+    </div>-->
+            
             <h1 class="secondary-title">Rage</h1>
             <h1 class="title text-red">Arcade</h1>
             <hr class="neon-hr" />
@@ -203,10 +232,16 @@
                     Un cruce entre Tempest (1981) y Temple Run (2011), "Tempest Run" le da un nuevo giro a esos juegos icónicos y se hizo para el Pygame Community Summer Jam 2021, cuyo tema fue "Recrear un juego antiguo con un giro". Salta sobre picos, deslízate a través de enemigos y evita las paredes en este interminable corredor 3D. Mira hasta dónde puedes llegar en el interminable agujero de gusano.
                 </p>
             </div>
-            <div class="col-md-12 p-5">
-                <h1 class="text-primary text-center">Personal del Arcade</h1>
+            <div class="col-md-12 p-5 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#0D6EFD" class="bi bi-people" viewBox="0 0 16 16">
+                    <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
+                </svg>
+                <h1 class="text-primary text-center mb-4 mt-4">Personal del Arcade</h1>
+                <p class="text-white">
+                    Somos una empresa multidisciplinaria que se enfoca en la contratación de profesionales apasionados, creativos y dinámicos en el área informática.
+                </p>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="card bg-dark text-white">
                     <img class="card-img-top" src="assets/Jorge.jpeg" alt="Card image">
                     <div class="card-body" style="min-height: 120px;">
@@ -215,7 +250,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="card bg-dark text-white">
                     <img class="card-img-top" src="assets/Angel.jpg" alt="Card image">
                     <div class="card-body" style="min-height: 120px;">
@@ -224,7 +259,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="card bg-dark text-white" style="min-width: 200px;">
                     <img class="card-img-top" src="assets/juanpa.jpg" alt="Card image">
                     <div class="card-body" style="min-height: 120px;">
@@ -233,7 +268,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-12 col-xs-12">
                 <div class="card bg-dark text-white" style="min-width: 200px;">
                     <img class="card-img-top" src="assets/Isabella Monique.jpeg" alt="Card image">
                     <div class="card-body" style="min-height: 120px;">
@@ -242,7 +277,32 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-12 p-5 text-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#DC3545" class="bi bi-nut-fill" viewBox="0 0 16 16">
+                    <path d="M4.58 1a1 1 0 0 0-.868.504l-3.428 6a1 1 0 0 0 0 .992l3.428 6A1 1 0 0 0 4.58 15h6.84a1 1 0 0 0 .868-.504l3.429-6a1 1 0 0 0 0-.992l-3.429-6A1 1 0 0 0 11.42 1H4.58zm5.018 9.696a3 3 0 1 1-3-5.196 3 3 0 0 1 3 5.196z" />
+                </svg>
+                <h1 class="text-danger mb-4 mt-4">Proceso de creación</h1>
+                <p class="text-white">
+                    Se debe conocer el Proceso de Desarrollo de una empresa, para comprender mejor su funcionamiento, y en particular como se atienden sus necesidades. Asi mismo, publicamos nuestros procesos internos para establecer una relación más estrecha y de confianza con nuestros clientes.
+                </p>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <img src="assets/cortando.jpeg" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded creacion">
+                <img src="assets/plasmando.jpeg" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded creacion">
+                <img src="assets/JorgeLuis.jpeg" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded creacion">
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <img src="assets/cortando_2.jpeg" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded creacion">
+                <img src="assets/recortando.jpeg" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded creacion">
+                <img src="assets/cuadrando.jpeg" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded creacion">
+                <img src="assets/selfie.jpeg" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded creacion">
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <img src="assets/grupal.jpeg" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded creacion">
+                <img src="assets/construyendo.gif" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded creacion">
+                <img src="assets/juanpa.gif" data-aos="fade-up" data-aos-once="true" class="img-fluid mb-3 rounded creacion">
+            </div>
         </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
